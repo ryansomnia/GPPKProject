@@ -21,7 +21,7 @@ const HomeScreen = () => {
       <View>
         <View
           style={{
-            backgroundColor: '#394a6d',
+            backgroundColor: '#588da8',
             height: 54,
             flexDirection: 'row',
             alignItems: 'center',
@@ -35,7 +35,7 @@ const HomeScreen = () => {
                   backgroundColor: 'white',
                   borderRadius: 8,
                   paddingLeft: 30,
-                  paddingRight: 90,
+                  paddingRight: 135,
                   paddingVertical: 0,
                 }}
               />
@@ -56,8 +56,8 @@ const HomeScreen = () => {
         <View
           style={{
             justifyContent: 'flex-end',
-            position: 'relative',
-            bottom: 35,
+            position: 'absolute',
+            bottom: 17,
             left: 270,
           }}>
           <Image
@@ -97,11 +97,11 @@ const HomeScreen = () => {
         </View>
         <ScrollView horizontal={true}>
           <View style={{flexDirection: 'row', paddingLeft: 6}}>
-            <View style={{paddingHorizontal: 6}}>
+            <View style={{padding: 6}}>
               <View
                 style={{
-                  height: 150,
-                  width: 220,
+                  height: 140,
+                  width: 250,
                   borderRadius: 8,
                   backgroundColor: 'white',
                 }}>
@@ -145,7 +145,7 @@ const HomeScreen = () => {
                   }}
                 />
                 <Text style={{fontSize: 13, marginLeft: 8, fontWeight: 'bold'}}>
-                  - Player Request
+                  - Prayer Request
                 </Text>
                 <Text style={{fontSize: 12, padding: 5}}>
                   Tuhan Berkuasa di area yang kamu akui
@@ -169,9 +169,10 @@ const HomeScreen = () => {
         <View>
           <View
             style={{
-              height: 170,
+              height: 190,
               width: '100%',
               backgroundColor: 'white',
+              paddingBottom: 5,
             }}>
             <Image
               source={require('../../../icon/gambar1.jpg')}
@@ -182,8 +183,14 @@ const HomeScreen = () => {
                 flex: 1,
               }}
             />
-            <Text style={{fontSize: 13, marginLeft: 8, fontWeight: 'bold'}}>
-              - Player Request
+            <Text
+              style={{
+                fontSize: 13,
+                marginLeft: 8,
+                fontWeight: 'bold',
+                paddingTop: 10,
+              }}>
+              - Prayer Request
             </Text>
             <Text style={{fontSize: 12, padding: 5}}>
               Tuhan Berkuasa di area yang kamu akui
