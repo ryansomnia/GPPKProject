@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import {StyleSheet, View, Text, Image, ActivityIndicator} from 'react-native';
-import Router from './router';
 import {NavigationContainer} from '@react-navigation/native';
+import React, {Component} from 'react';
+import Router from './router';
 
 export default class App extends Component {
   render() {
@@ -12,5 +11,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({});

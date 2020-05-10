@@ -1,19 +1,11 @@
-import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Splash, HomeScreen} from '../pages';
+import {createStackNavigator} from 'react-navigation-stack';
+import HomeScreen from '../pages';
+import {createAppContainer} from 'react-navigation';
 
-const Stack = createStackNavigator();
+const AppNavigator = createStackNavigator({
+  HomeScreen: {
+    screen: HomeScreen,
+  },
+});
 
-const Router = () => {
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}>
-      <Stack.Screen name="Splash" component={Splash} />
-      <Stack.Screen name="HomeScreen" component={HomeScreen} />
-    </Stack.Navigator>
-  );
-};
-
-export default Router;
+export default createAppContainer(AppNavigator);

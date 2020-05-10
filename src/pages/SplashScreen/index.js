@@ -20,7 +20,7 @@ const Splash = ({navigation}) => {
           alignItems: 'center',
         }}>
         <Image
-          source={require('../../../icon/gppklogo.png')}
+          source={require('../../../src/assets/icon/gppklogo.png')}
           style={{
             width: 125,
             height: 125,
